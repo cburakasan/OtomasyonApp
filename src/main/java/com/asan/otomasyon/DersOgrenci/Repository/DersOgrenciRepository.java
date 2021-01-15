@@ -17,4 +17,6 @@ public interface DersOgrenciRepository extends JpaRepository<DersOgrenci,Long> {
 
     DersOgrenci deleteByDers(Ders ders);
 
+    List<DersOgrenci> findAllByDers(Ders ders);
+
 }

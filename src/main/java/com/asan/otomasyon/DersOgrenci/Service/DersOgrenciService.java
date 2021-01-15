@@ -9,4 +9,5 @@ public interface DersOgrenciService {
 
     OgrenciDersSilResponseDto ogrenciDersSil(OgrenciDersSilRequestDto ogrenciDersSilRequestDto);
 
+    DerseKayitliOgrenciResponseDto derseKayitliOgrenci(DerseKayitliOgrenciRequestDto derseKayitliOgrenciRequestDto);
 }
