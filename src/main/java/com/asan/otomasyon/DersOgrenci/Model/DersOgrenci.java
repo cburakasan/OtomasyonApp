@@ -1,14 +1,16 @@
-package com.asan.otomasyon.Ders.Model;
+package com.asan.otomasyon.DersOgrenci.Model;
 
+import com.asan.otomasyon.Ders.Model.Ders;
 import com.asan.otomasyon.Ogrenci.Model.Ogrenci;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table
 @Data
-public class DersOgrenci {
+public class DersOgrenci implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
