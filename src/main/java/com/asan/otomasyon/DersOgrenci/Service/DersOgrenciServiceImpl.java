@@ -62,7 +62,7 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
                 dersDto.setDersinAdi(dersAdi);
                 dersDtoList.add(dersDto);
             }
-            ogrenciAlinanDersResponseDto.setMesaj(ogrenciIdFromRequest + "'li ogrencinin secmis oldugu dersler");
+            ogrenciAlinanDersResponseDto.setMesaj(ogrenciIdFromRequest + " "+ "id'li ogrencinin secmis oldugu dersler");
             ogrenciAlinanDersResponseDto.setDersDtoList(dersDtoList);
             log.info("ogrencinin secmis oldugu ders listeleme basarili");
             return ogrenciAlinanDersResponseDto;
@@ -217,8 +217,8 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
             return ogrenciDersSilResponseDto;
         } catch (Exception exception) {
             String message = exception.getMessage();
-            log.error(message + "ders secimi sirasinda bir hata olustu");
-            ogrenciDersSilResponseDto.setMesaj("ders secimi sirasinda bir hata olustu");
+            log.error(message + "ders silme islemi sirasinda bir hata olustu");
+            ogrenciDersSilResponseDto.setMesaj("ders silme islemi sirasinda bir hata olustu");
             return ogrenciDersSilResponseDto;
         }
 
@@ -256,7 +256,7 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
                 ogrenciDto.setOgrenciNo(ogrenciNo);
                 ogrenciDtoList.add(ogrenciDto);
             }
-            derseKayitliOgrenciResponseDto.setMesaj(dersIdFromRequest + "'li derse kayitli ogrenci listesi");
+            derseKayitliOgrenciResponseDto.setMesaj(dersIdFromRequest +" "+ "id'li derse kayitli ogrenci listesi");
             derseKayitliOgrenciResponseDto.setOgrenciDtoList(ogrenciDtoList);
             return derseKayitliOgrenciResponseDto;
 

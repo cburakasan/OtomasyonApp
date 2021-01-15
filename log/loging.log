@@ -1,2 +1,25 @@
 00:58:05,607  INFO DersServiceImpl:69 - ders kaydi basarili
 01:12:53,393  INFO DersServiceImpl:69 - ders kaydi basarili
+23:23:54,258  INFO DersServiceImpl:69 - ders kaydi basarili
+23:24:24,963  INFO DersServiceImpl:69 - ders kaydi basarili
+23:25:17,235  INFO DersServiceImpl:69 - ders kaydi basarili
+23:25:18,047  INFO DersServiceImpl:69 - ders kaydi basarili
+23:29:43,694  INFO DersServiceImpl:45 - Ders Listeleme basarili
+23:33:19,217  INFO DersServiceImpl:46 - Ders Listeleme basarili
+23:39:33,373  INFO DersServiceImpl:101 - ders guncelleme islemi basarili
+23:44:01,101  INFO OgrenciServiceImpl:77 - ogrenci kaydi basarili
+23:44:51,681  INFO OgrenciServiceImpl:77 - ogrenci kaydi basarili
+23:45:04,829  INFO OgrenciServiceImpl:77 - ogrenci kaydi basarili
+23:45:27,947  INFO OgrenciServiceImpl:77 - ogrenci kaydi basarili
+23:46:40,987  INFO OgrenciServiceImpl:47 - Ogrenci Listeleme basarili
+23:52:24,033  INFO OgrenciServiceImpl:113 - ogrenci guncelleme islemi basarili
+23:56:12,667  INFO DersOgrenciServiceImpl:136 - ders kaydi basarili
+23:59:35,465  INFO DersOgrenciServiceImpl:136 - ders kaydi basarili
+23:59:59,102  INFO DersOgrenciServiceImpl:136 - ders kaydi basarili
+00:00:05,436  INFO DersOgrenciServiceImpl:136 - ders kaydi basarili
+00:00:14,061 ERROR DersOgrenciServiceImpl:156 - Dersin kontenjani dolu
+00:02:24,287  INFO DersOgrenciServiceImpl:67 - ogrencinin secmis oldugu ders listeleme basarili
+00:06:24,651 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
+00:10:29,259 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
+00:12:14,939 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
+00:22:06,078 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu

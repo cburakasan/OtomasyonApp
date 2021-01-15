@@ -41,6 +41,7 @@ public class DersServiceImpl implements DersService {
                 dersDtoList.add(dersDto);
 
             }
+            dersListResponseDto.setMesaj("Ders Listesi:");
             dersListResponseDto.setDersDtoList(dersDtoList);
             log.info("Ders Listeleme basarili");
 

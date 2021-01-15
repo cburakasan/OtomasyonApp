@@ -17,24 +17,24 @@ import org.springframework.web.bind.annotation.RestController;
 public class DersController {
 
     @Autowired
-    DersService dersSercice;
+    DersService dersService;
 
     @Autowired
     DersOgrenciService dersOgrenciService;
 
     @PostMapping("/list")
     public DersListResponseDto getDersList(@RequestBody DersListRequestDto dersListRequestDto) {
-        return dersSercice.getDersList(dersListRequestDto);
+        return dersService.getDersList(dersListRequestDto);
     }
 
     @PostMapping("/ekle")
     public DersEkleResponseDto dersEkle(@RequestBody DersEkleRequestDto dersEkleRequestDto) {
-        return dersSercice.dersEkle(dersEkleRequestDto);
+        return dersService.dersEkle(dersEkleRequestDto);
     }
 
     @PostMapping("/guncelleme")
     public DersGuncellemeResponseDto dersGuncelleme(@RequestBody DersGuncellemeRequestDto dersGuncellemeRequestDto) {
-        return dersSercice.dersGuncelleme(dersGuncellemeRequestDto);
+        return dersService.dersGuncelleme(dersGuncellemeRequestDto);
     }
 
     @PostMapping("/ogrencilist")

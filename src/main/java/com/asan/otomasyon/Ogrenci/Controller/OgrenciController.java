@@ -6,10 +6,7 @@ import com.asan.otomasyon.DersOgrenci.Service.DersOgrenciService;
 import com.asan.otomasyon.Ogrenci.Dto.*;
 import com.asan.otomasyon.Ogrenci.Service.OgrenciSercice;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/ogrenci")

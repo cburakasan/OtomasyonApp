@@ -43,6 +43,7 @@ public class OgrenciServiceImpl implements OgrenciSercice {
                 ogrenciDtoList.add(ogrenciDto);
 
             }
+            ogrenciListResponseDto.setMesaj("Ogrenci listesi:");
             ogrenciListResponseDto.setOgrenciDtoList(ogrenciDtoList);
             log.info("Ogrenci Listeleme basarili");
 
