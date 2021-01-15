@@ -19,45 +19,44 @@ public class OgrenciController {
     DersOgrenciService dersOgrenciService;
 
 
-    @PostMapping("/list")
+    @PostMapping("/list") //Sistemde tanımlı öğrencilerin listelenmesini saglayan servis.
     public OgrenciListResponseDto getOgrenciList(@RequestBody OgrenciListRequestDto ogrenciListRequestDto) {
+
         return ogrenciSercice.getOgrenciList(ogrenciListRequestDto);
 
     }
 
-    @PostMapping("/ekle")
+    @PostMapping("/ekle") //Yeni bir öğrenci tanımlanmasını saglayan servis.
     public OgrenciEkleResponseDto ogrenciEkle(@RequestBody OgrenciEkleRequestDto ogrenciEkleRequestDto) {
 
         return ogrenciSercice.ogrenciEkle(ogrenciEkleRequestDto);
 
     }
 
-    @PostMapping("/guncelleme")
-    public OgrenciGuncellemeResponseDto ogrenciGuncelleme (@RequestBody OgrenciGuncellemeRequestDto ogrenciGuncellemeRequestDto){
+    @PostMapping("/guncelleme") //Sistemde mevcut olan ogrenciyi guncelleyen servis.
+    public OgrenciGuncellemeResponseDto ogrenciGuncelleme(@RequestBody OgrenciGuncellemeRequestDto ogrenciGuncellemeRequestDto) {
 
         return ogrenciSercice.ogrenciGuncelleme(ogrenciGuncellemeRequestDto);
     }
 
-    @PostMapping("/derssecim")
-    public OgrenciDersSecmesiResponseDto dersKaydi(@RequestBody OgrenciDersSecmesiRequestDto ogrenciDersSecmesiRequestDto){
+    @PostMapping("/derssecim") /* Bir ogrencinin derse kaydolmasini saglayan servis.Derse kayit olurken
+    daha onceden tanimlanmis olan kontenjan kontrolu yapilir kontenjan dolu ise hata mesaji yayinlanir.*/
+    public OgrenciDersSecmesiResponseDto dersKaydi(@RequestBody OgrenciDersSecmesiRequestDto ogrenciDersSecmesiRequestDto) {
 
         return dersOgrenciService.ogrenciDersKaydi(ogrenciDersSecmesiRequestDto);
     }
 
-    @PostMapping("/dersList")
-    public OgrenciAlinanDersResponseDto ogrenciDersListeleme (@RequestBody OgrenciAlinanDersRequestDto ogrenciAlinanDersRequestDto){
+    @PostMapping("/dersList") // Bir öğrencinin aldığı derslerin listelenmesini saglayan servis.
+    public OgrenciAlinanDersResponseDto ogrenciDersListeleme(@RequestBody OgrenciAlinanDersRequestDto ogrenciAlinanDersRequestDto) {
 
         return dersOgrenciService.ogrenciDersListeleme(ogrenciAlinanDersRequestDto);
     }
 
-    @PostMapping("/dersSil")
-    public OgrenciDersSilResponseDto ogrenciDersSil (@RequestBody OgrenciDersSilRequestDto ogrenciDersSilRequestDto){
+    @PostMapping("/dersSil") // Bir ogrencinin bir dersi birakmasini saglayan servis.
+    public OgrenciDersSilResponseDto ogrenciDersSil(@RequestBody OgrenciDersSilRequestDto ogrenciDersSilRequestDto) {
 
-        return  dersOgrenciService.ogrenciDersSil(ogrenciDersSilRequestDto);
+        return dersOgrenciService.ogrenciDersSil(ogrenciDersSilRequestDto);
     }
-
-
-
 
 
 }

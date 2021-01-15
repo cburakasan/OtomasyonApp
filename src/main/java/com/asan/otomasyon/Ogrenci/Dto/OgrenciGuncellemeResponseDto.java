@@ -7,7 +7,6 @@ import java.io.Serializable;
 @Data
 public class OgrenciGuncellemeResponseDto implements Serializable {
 
-
     private String mesaj;
 
 

@@ -9,13 +9,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface DersOgrenciRepository extends JpaRepository<DersOgrenci,Long> {
+public interface DersOgrenciRepository extends JpaRepository<DersOgrenci, Long> {
 
     List<DersOgrenci> findAllByOgrenci(Ogrenci ogrenci);
 
-    DersOgrenci findByOgrenciAndDers (Ogrenci ogrenci,Ders ders );
+    DersOgrenci findByOgrenciAndDers(Ogrenci ogrenci, Ders ders);
 
-     void deleteByDers(Ders ders);
+    DersOgrenci deleteByDersWhereOgrenci(Ders ders, Ogrenci ogrenci);
 
     List<DersOgrenci> findAllByDers(Ders ders);
 

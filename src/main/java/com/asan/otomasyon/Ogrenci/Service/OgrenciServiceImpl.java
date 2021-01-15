@@ -103,7 +103,6 @@ public class OgrenciServiceImpl implements OgrenciSercice {
 
             }
 
-
             ogrenci.setOgrenciId(ogrenciIdFromRequest);
             ogrenci.setIsim(isimFromRequest);
             ogrenci.setSoyisim(soyisimFromRequest);
@@ -129,6 +128,4 @@ public class OgrenciServiceImpl implements OgrenciSercice {
             return ogrenciGuncellemeResponseDto;
         }
     }
-
-
 }

@@ -20,6 +20,7 @@ public class DersServiceImpl implements DersService {
 
     @Override
     public DersListResponseDto getDersList(DersListRequestDto dersListRequestDto) {
+
         DersListResponseDto dersListResponseDto = new DersListResponseDto();
 
         try {
@@ -82,7 +83,6 @@ public class DersServiceImpl implements DersService {
     public DersGuncellemeResponseDto dersGuncelleme(DersGuncellemeRequestDto dersGuncellemeRequestDto) {
 
         DersGuncellemeResponseDto dersGuncellemeResponseDto = new DersGuncellemeResponseDto();
-
         try {
             Long dersIdFromRequest = dersGuncellemeRequestDto.getDersId();
             String dersAdiFromRequest = dersGuncellemeRequestDto.getDersAdi();
@@ -115,6 +115,4 @@ public class DersServiceImpl implements DersService {
             return dersGuncellemeResponseDto;
         }
     }
-
-
 }

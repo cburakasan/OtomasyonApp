@@ -8,7 +8,6 @@ import java.util.List;
 @Data
 public class DersListResponseDto implements Serializable {
 
-  private  List<DersDto> dersDtoList;
-
-  private String mesaj;
+    private List<DersDto> dersDtoList;
+    private String mesaj;
 }

@@ -8,7 +8,7 @@ import java.util.List;
 @Data
 public class OgrenciListResponseDto implements Serializable {
 
-  private  List<OgrenciDto> ogrenciDtoList;
+    private List<OgrenciDto> ogrenciDtoList;
 
-  private String mesaj;
+    private String mesaj;
 }

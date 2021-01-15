@@ -13,5 +13,4 @@ public class OgrenciAlinanDersResponseDto implements Serializable {
     private String mesaj;
 
 
-
 }

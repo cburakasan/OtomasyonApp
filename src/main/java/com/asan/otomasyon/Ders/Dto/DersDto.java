@@ -8,9 +8,7 @@ import java.io.Serializable;
 public class DersDto implements Serializable {
 
     private Long DersId;
-
     private String dersinAdi;
-
     private Long kontenjan;
 
 }

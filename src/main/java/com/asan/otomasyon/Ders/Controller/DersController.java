@@ -22,22 +22,22 @@ public class DersController {
     @Autowired
     DersOgrenciService dersOgrenciService;
 
-    @PostMapping("/list")
+    @PostMapping("/list")  //Sistemde açılan derslerin listelenmesi isini yapan servis.
     public DersListResponseDto getDersList(@RequestBody DersListRequestDto dersListRequestDto) {
         return dersService.getDersList(dersListRequestDto);
     }
 
-    @PostMapping("/ekle")
+    @PostMapping("/ekle") //Yeni bir ders tanımlayan servis.
     public DersEkleResponseDto dersEkle(@RequestBody DersEkleRequestDto dersEkleRequestDto) {
         return dersService.dersEkle(dersEkleRequestDto);
     }
 
-    @PostMapping("/guncelleme")
+    @PostMapping("/guncelleme") //Sistemde mevcut olan dersleri guncelleyen servis.
     public DersGuncellemeResponseDto dersGuncelleme(@RequestBody DersGuncellemeRequestDto dersGuncellemeRequestDto) {
         return dersService.dersGuncelleme(dersGuncellemeRequestDto);
     }
 
-    @PostMapping("/ogrencilist")
+    @PostMapping("/ogrencilist") //Derse kayitli olan ogrenci listesini olusturan servis.
     public DerseKayitliOgrenciResponseDto derseKayitliOgrenci(@RequestBody DerseKayitliOgrenciRequestDto derseKayitliOgrenciRequestDto) {
         return dersOgrenciService.derseKayitliOgrenci(derseKayitliOgrenciRequestDto);
     }

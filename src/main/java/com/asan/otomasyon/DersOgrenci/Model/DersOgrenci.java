@@ -17,12 +17,12 @@ public class DersOgrenci implements Serializable {
     @Column
     private Long dersOgrenciId;
 
-    @ManyToOne(fetch=FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_ogrenci",foreignKey = @ForeignKey(name = "FK_Ogrenci_DersOgrenci"))
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_ogrenci", foreignKey = @ForeignKey(name = "FK_Ogrenci_DersOgrenci"))
     private Ogrenci ogrenci;
 
-    @ManyToOne( fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_ders",foreignKey = @ForeignKey(name = "FK_Ders_DersOgrenci"))
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_ders", foreignKey = @ForeignKey(name = "FK_Ders_DersOgrenci"))
     private Ders ders;
 
 

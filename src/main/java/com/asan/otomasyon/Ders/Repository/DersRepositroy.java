@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @EnableJpaRepositories
-public interface DersRepositroy extends JpaRepository<Ders,Long> {
+public interface DersRepositroy extends JpaRepository<Ders, Long> {
 
     Ders findByDersId(Long dersId);
 
