@@ -106,6 +106,24 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
             }
             Long dersId = ders.getDersId();
             String dersAdi = ders.getDersAdi();
+            Long kontenjan = ders.getKontenjan();
+
+            List<DersOgrenci> dersOgrenciList = dersOgrenciRepository.findAllByDers(ders);
+            Integer size = dersOgrenciList.size();
+            if (size.equals(null)) {
+                throw new DersOgrenciException("Ders ogrenci listesi bulunamadi", new Exception());
+            }
+            List<Ogrenci> ogrenciList = new ArrayList<>();
+            for (DersOgrenci dersOgrenci : dersOgrenciList) {
+                Ogrenci ogrenciFromDers = dersOgrenci.getOgrenci();
+                ogrenciList.add(ogrenciFromDers);
+            }
+            Integer derseKayitliOgrenciSayisi = ogrenciList.size();
+            if (derseKayitliOgrenciSayisi >= kontenjan) {
+                throw new DersOgrenciException("Dersin kontenjani dolu", new Exception());
+            }
+
+
             dersDto.setDersId(dersId);
             dersDto.setDersinAdi(dersAdi);
 
@@ -127,12 +145,19 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
             ogrenciDersSecmesiResponseDto.setMesaj("ogrenci id'si hatali");
             return ogrenciDersSecmesiResponseDto;
 
-
         } catch (DersException dersException) {
             String message = dersException.getMessage();
             log.error(message);
             ogrenciDersSecmesiResponseDto.setMesaj("Ders id'si hatali");
             return ogrenciDersSecmesiResponseDto;
+
+        } catch (DersOgrenciException dersOgrenciException) {
+            String message = dersOgrenciException.getMessage();
+            log.error(message);
+            ogrenciDersSecmesiResponseDto.setMesaj(message);
+            return ogrenciDersSecmesiResponseDto;
+
+
         } catch (Exception exception) {
             String message = exception.getMessage();
             log.error(message + "ders secimi sirasinda bir hata olustu");
