@@ -23,3 +23,29 @@
 00:10:29,259 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
 00:12:14,939 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
 00:22:06,078 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders secimi sirasinda bir hata olustu
+11:13:35,391  INFO OgrenciServiceImpl:78 - ogrenci kaydi basarili
+11:13:54,299  INFO OgrenciServiceImpl:78 - ogrenci kaydi basarili
+11:13:58,849  INFO OgrenciServiceImpl:48 - Ogrenci Listeleme basarili
+11:14:21,188  INFO DersServiceImpl:71 - ders kaydi basarili
+11:14:33,764  INFO DersServiceImpl:71 - ders kaydi basarili
+11:14:37,912  INFO DersServiceImpl:47 - Ders Listeleme basarili
+11:14:46,944  INFO DersServiceImpl:47 - Ders Listeleme basarili
+11:15:43,337  INFO DersOgrenciServiceImpl:136 - ders kaydi basarili
+11:17:46,887 ERROR DersOgrenciServiceImpl:220 - No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' call; nested exception is javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current thread - cannot reliably process 'remove' callders silme islemi sirasinda bir hata olustu
+11:18:46,143  INFO OgrenciServiceImpl:78 - ogrenci kaydi basarili
+11:18:58,514  INFO OgrenciServiceImpl:78 - ogrenci kaydi basarili
+11:19:03,351  INFO OgrenciServiceImpl:48 - Ogrenci Listeleme basarili
+11:19:08,159  INFO DersServiceImpl:71 - ders kaydi basarili
+11:19:10,946  INFO DersServiceImpl:47 - Ders Listeleme basarili
+11:19:31,086  INFO DersOgrenciServiceImpl:138 - ders kaydi basarili
+11:21:14,417 ERROR DersOgrenciServiceImpl:222 - java.lang.Integer cannot be cast to java.lang.Booleanders silme islemi sirasinda bir hata olustu
+11:22:02,938  INFO DersServiceImpl:71 - ders kaydi basarili
+11:22:07,490  INFO OgrenciServiceImpl:78 - ogrenci kaydi basarili
+11:22:10,431  INFO OgrenciServiceImpl:48 - Ogrenci Listeleme basarili
+11:22:15,235  INFO DersServiceImpl:47 - Ders Listeleme basarili
+11:22:29,988 ERROR DersOgrenciServiceImpl:222 - nullders silme islemi sirasinda bir hata olustu
+11:22:42,138 ERROR DersOgrenciServiceImpl:222 - nullders silme islemi sirasinda bir hata olustu
+11:23:18,141 ERROR DersOgrenciServiceImpl:222 - nullders silme islemi sirasinda bir hata olustu
+11:23:32,200 ERROR DersOgrenciServiceImpl:165 - nullders secimi sirasinda bir hata olustu
+11:23:54,491  INFO DersOgrenciServiceImpl:138 - ders kaydi basarili
+11:24:05,663  INFO DersOgrenciServiceImpl:198 - Ders silindi

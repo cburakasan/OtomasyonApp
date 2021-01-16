@@ -15,10 +15,12 @@ import com.asan.otomasyon.Ogrenci.Repository.OgrenciRepository;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Transactional
 @Service
 @Log4j
 public class DersOgrenciServiceImpl implements DersOgrenciService {
@@ -192,7 +194,7 @@ public class DersOgrenciServiceImpl implements DersOgrenciService {
             }
 
             Ders birakilacakDers = dersOgrenci.getDers();
-            dersOgrenciRepository.deleteByDersWhereOgrenci(birakilacakDers, ogrenci);
+            dersOgrenciRepository.deleteDersOgrenciByDersAndOgrenci(birakilacakDers, ogrenci);
             log.info("Ders silindi");
             ogrenciDersSilResponseDto.setMesaj("Ders silindi");
             return ogrenciDersSilResponseDto;
