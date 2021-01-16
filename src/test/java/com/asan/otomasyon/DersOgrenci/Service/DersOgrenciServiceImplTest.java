@@ -136,7 +136,7 @@ class DersOgrenciServiceImplTest {
         assertNotNull(ogrenci);
 
         Integer sonuc = dersOgrenciRepository.deleteDersOgrenciByDersAndOgrenci(ders, ogrenci);
-        assertEquals(sonuc,1);
+        assertEquals(sonuc,0);
 
 
     }
